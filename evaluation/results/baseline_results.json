@@ -1,0 +1,44 @@
+{
+  "no_recovery": {
+    "policy_name": "No Recovery (Lower Bound)",
+    "n_episodes_per_seed": 2000,
+    "n_seeds": 5,
+    "recovery_rate_mean": 0.0,
+    "recovery_rate_std": 0.0,
+    "recovered_revenue_mean": 0.0,
+    "at_risk_revenue_mean": 34754500.0,
+    "avg_recovery_time_hours_mean": 0.0,
+    "attempts_per_recovery_mean": 0.0,
+    "interventions_per_customer_mean": 0.0,
+    "expected_reward_mean": 0.0,
+    "provenance": "SIMULATED"
+  },
+  "fixed_retry": {
+    "policy_name": "Fixed Retry Schedule",
+    "n_episodes_per_seed": 2000,
+    "n_seeds": 5,
+    "recovery_rate_mean": 0.2569,
+    "recovery_rate_std": 0.005132250968142541,
+    "recovered_revenue_mean": 8942686.2,
+    "at_risk_revenue_mean": 34754500.0,
+    "avg_recovery_time_hours_mean": 1.5351252563826419,
+    "attempts_per_recovery_mean": 10.217489039566102,
+    "interventions_per_customer_mean": 2.6236,
+    "expected_reward_mean": 4320.3981,
+    "provenance": "SIMULATED"
+  },
+  "rule_based": {
+    "policy_name": "Rule-Based Expert Heuristic",
+    "n_episodes_per_seed": 2000,
+    "n_seeds": 5,
+    "recovery_rate_mean": 0.8958999999999999,
+    "recovery_rate_std": 0.0022226110770893,
+    "recovered_revenue_mean": 32873808.2,
+    "at_risk_revenue_mean": 34754500.0,
+    "avg_recovery_time_hours_mean": 33.690108071433066,
+    "attempts_per_recovery_mean": 0.6081331750174787,
+    "interventions_per_customer_mean": 1.6715,
+    "expected_reward_mean": 16235.377600000002,
+    "provenance": "SIMULATED"
+  }
+}

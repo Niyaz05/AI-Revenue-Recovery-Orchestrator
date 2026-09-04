@@ -1,0 +1,30 @@
+{
+  "_comment": "⚠️ FIXTURE — Representative structure, not a captured live payload.",
+  "entity": "event",
+  "account_id": "acc_test_XXXXXXXXXX",
+  "event": "subscription.activated",
+  "contains": ["subscription"],
+  "payload": {
+    "subscription": {
+      "entity": {
+        "id": "sub_test_XXXXXXXXXX",
+        "entity": "subscription",
+        "plan_id": "plan_test_XXXXXXXXXX",
+        "customer_id": "cust_test_XXXXXXXXXX",
+        "status": "active",
+        "current_start": 1700000000,
+        "current_end": 1702592000,
+        "ended_at": null,
+        "quantity": 1,
+        "notes": {},
+        "charge_at": 1702592000,
+        "paid_count": 1,
+        "customer_notify": 1,
+        "created_at": 1698000000,
+        "remaining_count": 5,
+        "total_count": 6
+      }
+    }
+  },
+  "created_at": 1700000100
+}

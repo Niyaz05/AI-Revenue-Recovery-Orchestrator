@@ -1,0 +1,56 @@
+{
+  "_comment": "⚠️ FIXTURE — Representative structure, not a captured live payload.",
+  "entity": "event",
+  "account_id": "acc_test_XXXXXXXXXX",
+  "event": "payment_link.paid",
+  "contains": ["payment_link", "payment"],
+  "payload": {
+    "payment_link": {
+      "entity": {
+        "id": "plink_test_XXXXXXXXXX",
+        "entity": "payment_link",
+        "amount": 50000,
+        "currency": "INR",
+        "status": "paid",
+        "description": "Recovery payment for subscription sub_test_XXXXXXXXXX",
+        "customer": {
+          "name": "Test Customer",
+          "email": "test@example.com",
+          "contact": "+919876543210"
+        },
+        "notify": {
+          "email": true,
+          "sms": true
+        },
+        "reminder_enable": true,
+        "short_url": "https://rzp.io/i/test456",
+        "notes": {
+          "subscription_id": "sub_test_XXXXXXXXXX",
+          "recovery_action_id": "ra_test_001",
+          "provenance": "RAZORPAY_TEST_MODE"
+        },
+        "created_at": 1700000200,
+        "expired_at": 1700604800
+      }
+    },
+    "payment": {
+      "entity": {
+        "id": "pay_test_LINKPAID01",
+        "entity": "payment",
+        "amount": 50000,
+        "currency": "INR",
+        "status": "captured",
+        "method": "upi",
+        "description": "Recovery payment",
+        "customer_id": "cust_test_XXXXXXXXXX",
+        "email": "test@example.com",
+        "contact": "+919876543210",
+        "notes": {},
+        "created_at": 1700050000,
+        "error_code": null,
+        "error_description": null
+      }
+    }
+  },
+  "created_at": 1700050100
+}

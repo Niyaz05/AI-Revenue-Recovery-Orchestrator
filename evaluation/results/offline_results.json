@@ -1,0 +1,61 @@
+{
+  "provenance": "HELD_OUT_OFFLINE_EVAL",
+  "n_seeds": 10,
+  "business_metrics": {
+    "at_risk_revenue_mean": 34610800.0,
+    "recovered_revenue_mean": 33795811.7,
+    "recovered_revenue_std": 1101393.6871014878,
+    "recovery_rate_mean": 0.7941499999999999,
+    "recovery_rate_std": 0.007858275892331608,
+    "recovery_rate_95_ci": [
+      0.78969875,
+      0.7993012500000001
+    ],
+    "incremental_revenue_vs_rule_based": 922003.5000000037,
+    "incremental_lift_pct_vs_rule_based": 2.804675060433077,
+    "incremental_revenue_vs_fixed_retry": 24853125.500000004,
+    "incremental_lift_pct_vs_fixed_retry": 277.9156614038409,
+    "avg_recovery_time_hours_mean": 63.25737882084695
+  },
+  "operational_metrics": {
+    "attempts_per_recovery_mean": 0.12425889131891592,
+    "interventions_per_customer_mean": 1.2691500000000002,
+    "unnecessary_attempts_reduction_vs_fixed_retry_pct": 98.78386078186394
+  },
+  "safety_metrics": {
+    "hard_policy_violation_rate": 0.0,
+    "is_safety_certified": true
+  },
+  "decision_metrics": {
+    "expected_reward_mean": 16642.78035,
+    "expected_reward_std": 549.5006671436829,
+    "expected_reward_95_ci": [
+      16330.4802575,
+      17036.510212499998
+    ]
+  },
+  "counterfactual_analysis": {
+    "provenance": "HELD_OUT_OFFLINE_EVAL",
+    "total_test_records": 8250,
+    "action_agreement_with_historical_rate": 0.1450909090909091,
+    "estimated_ips_reward_value": 26047.9231411863,
+    "ai_action_distribution": {
+      "WAIT": 23,
+      "RETRY": 471,
+      "PAYMENT_LINK": 584,
+      "SEND_REMINDER": 0,
+      "REQUEST_ALTERNATE_METHOD": 608,
+      "ESCALATE_TO_HUMAN": 5255,
+      "STOP_RECOVERY": 1309
+    },
+    "historical_action_distribution": {
+      "WAIT": 373,
+      "RETRY": 3943,
+      "PAYMENT_LINK": 1625,
+      "SEND_REMINDER": 760,
+      "REQUEST_ALTERNATE_METHOD": 997,
+      "ESCALATE_TO_HUMAN": 310,
+      "STOP_RECOVERY": 242
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Metric Category,Metric,Value
+Business,At-Risk Revenue Mean,"₹34,610,800.00"
+Business,Recovered Revenue Mean,"₹33,795,811.70"
+Business,Recovery Rate Mean,79.41%
+Business,Recovery Rate 95% CI,"[78.97%, 79.93%]"
+Business,Incremental Lift vs Rule-Based,+2.80%
+Business,Incremental Lift vs Fixed Retry,+277.92%
+Operational,Attempts / Recovery,0.12
+Operational,Interventions / Customer,1.27
+Safety,Hard Policy Violations,0.0
+Safety,Safety Certified,True
+Decision,Expected Reward / Episode,"₹16,642.78"
+Provenance,Data Provenance Tag,HELD_OUT_OFFLINE_EVAL

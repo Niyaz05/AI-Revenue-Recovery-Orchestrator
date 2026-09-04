@@ -1,0 +1,850 @@
+{
+  "timestamp": "2026-09-04T11:11:18.952001",
+  "n_seeds": 5,
+  "episodes_per_seed": 500,
+  "policy_evaluations": {
+    "No Recovery": {
+      "policy": "No Recovery",
+      "provenance": "SIMULATED",
+      "episode_return_mean": 0.0,
+      "episode_return_std": 0.0,
+      "recovery_rate_mean": 0.0,
+      "recovery_rate_std": 0.0,
+      "recovery_latency_hours_mean": 0.0,
+      "interventions_per_episode_mean": 0.0,
+      "attempts_per_episode_mean": 0.0,
+      "safety_violations_total": 0
+    },
+    "Fixed Retry": {
+      "policy": "Fixed Retry",
+      "provenance": "SIMULATED",
+      "episode_return_mean": 1068.2712,
+      "episode_return_std": 249.9619581763593,
+      "recovery_rate_mean": 0.1268,
+      "recovery_rate_std": 0.020063897926375123,
+      "recovery_latency_hours_mean": 0.0,
+      "interventions_per_episode_mean": 0.8404,
+      "attempts_per_episode_mean": 0.8404,
+      "safety_violations_total": 0
+    },
+    "Rule-Based": {
+      "policy": "Rule-Based",
+      "provenance": "SIMULATED",
+      "episode_return_mean": 16280.704236000009,
+      "episode_return_std": 490.16198357163,
+      "recovery_rate_mean": 0.9836,
+      "recovery_rate_std": 0.0008000000000000007,
+      "recovery_latency_hours_mean": 15.511926051032404,
+      "interventions_per_episode_mean": 1.8096,
+      "attempts_per_episode_mean": 0.49800000000000005,
+      "safety_violations_total": 0
+    },
+    "LinUCB Bandit": {
+      "policy": "LinUCB Bandit",
+      "provenance": "SIMULATED",
+      "episode_return_mean": 15997.339376000004,
+      "episode_return_std": 527.8262383113183,
+      "recovery_rate_mean": 0.776,
+      "recovery_rate_std": 0.015594870951694356,
+      "recovery_latency_hours_mean": 19.871344756863795,
+      "interventions_per_episode_mean": 1.1944000000000001,
+      "attempts_per_episode_mean": 0.0612,
+      "safety_violations_total": 0
+    },
+    "Sequential RL (CQL)": {
+      "policy": "Sequential RL (CQL)",
+      "provenance": "SIMULATED",
+      "episode_return_mean": 16179.048356000003,
+      "episode_return_std": 520.3971591836944,
+      "recovery_rate_mean": 0.9867999999999999,
+      "recovery_rate_std": 0.003487119154832542,
+      "recovery_latency_hours_mean": 22.200938110307618,
+      "interventions_per_episode_mean": 1.496,
+      "attempts_per_episode_mean": 0.0,
+      "safety_violations_total": 0
+    }
+  },
+  "off_policy_evaluation": {
+    "provenance": "HELD_OUT_OFFLINE_EVAL",
+    "importance_sampling": {
+      "estimator": "importance_sampling",
+      "provenance": "HELD_OUT_OFFLINE_EVAL",
+      "estimated_return_mean": 3863.2766130830864,
+      "estimated_return_95ci_lo": 3659.7349654965615,
+      "estimated_return_95ci_hi": 4062.9570166789154,
+      "n_episodes": 15000
+    },
+    "doubly_robust": {
+      "estimator": "doubly_robust",
+      "provenance": "HELD_OUT_OFFLINE_EVAL",
+      "estimated_return_mean": 16392.00719429134,
+      "estimated_return_95ci_lo": 16153.301902145104,
+      "estimated_return_95ci_hi": 16629.670170196725,
+      "n_episodes": 15000
+    }
+  },
+  "robustness_evaluation": {
+    "provenance": "SIMULATED",
+    "n_configs": 20,
+    "episodes_per_config": 1000,
+    "seed": 999,
+    "policies": {
+      "Sequential RL (CQL)": {
+        "episode_return": {
+          "min": 15955.781899999967,
+          "max": 16737.934909999964,
+          "mean": 16334.240692999962,
+          "std": 190.689799711739
+        },
+        "recovery_rate": {
+          "min": 0.959,
+          "max": 0.992,
+          "mean": 0.9745000000000001,
+          "std": 0.009594269122762827
+        },
+        "recovery_latency_hours": {
+          "min": 17.758064516129032,
+          "max": 27.698035160289557,
+          "mean": 23.18247812070929,
+          "std": 2.9770218407062865
+        },
+        "contacts_per_episode": {
+          "min": 1.391,
+          "max": 1.664,
+          "mean": 1.5467,
+          "std": 0.08061953857471525
+        },
+        "safety_violations_total": 0,
+        "per_config_results": [
+          {
+            "episode_return_mean": 16256.433769999963,
+            "recovery_rate": 0.973,
+            "recovery_latency_hours_mean": 24.813977389516957,
+            "contacts_per_episode_mean": 1.584,
+            "avg_episode_length": 1.584,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 15955.781899999967,
+            "recovery_rate": 0.967,
+            "recovery_latency_hours_mean": 27.698035160289557,
+            "contacts_per_episode_mean": 1.657,
+            "avg_episode_length": 1.657,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 15979.189389999963,
+            "recovery_rate": 0.959,
+            "recovery_latency_hours_mean": 27.07820646506778,
+            "contacts_per_episode_mean": 1.664,
+            "avg_episode_length": 1.664,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16273.372899999964,
+            "recovery_rate": 0.973,
+            "recovery_latency_hours_mean": 23.48201438848921,
+            "contacts_per_episode_mean": 1.557,
+            "avg_episode_length": 1.557,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16328.862069999965,
+            "recovery_rate": 0.975,
+            "recovery_latency_hours_mean": 24.763076923076923,
+            "contacts_per_episode_mean": 1.578,
+            "avg_episode_length": 1.578,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16190.789309999964,
+            "recovery_rate": 0.98,
+            "recovery_latency_hours_mean": 20.816326530612244,
+            "contacts_per_episode_mean": 1.485,
+            "avg_episode_length": 1.485,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16321.69188999996,
+            "recovery_rate": 0.982,
+            "recovery_latency_hours_mean": 20.773930753564155,
+            "contacts_per_episode_mean": 1.479,
+            "avg_episode_length": 1.479,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16531.482989999964,
+            "recovery_rate": 0.99,
+            "recovery_latency_hours_mean": 19.054545454545455,
+            "contacts_per_episode_mean": 1.423,
+            "avg_episode_length": 1.423,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16436.612439999957,
+            "recovery_rate": 0.974,
+            "recovery_latency_hours_mean": 24.147843942505133,
+            "contacts_per_episode_mean": 1.568,
+            "avg_episode_length": 1.568,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16375.457169999956,
+            "recovery_rate": 0.959,
+            "recovery_latency_hours_mean": 24.475495307612096,
+            "contacts_per_episode_mean": 1.612,
+            "avg_episode_length": 1.612,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16377.074769999967,
+            "recovery_rate": 0.967,
+            "recovery_latency_hours_mean": 25.067218200620477,
+            "contacts_per_episode_mean": 1.604,
+            "avg_episode_length": 1.604,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16737.934909999964,
+            "recovery_rate": 0.992,
+            "recovery_latency_hours_mean": 17.758064516129032,
+            "contacts_per_episode_mean": 1.391,
+            "avg_episode_length": 1.391,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16421.430849999964,
+            "recovery_rate": 0.984,
+            "recovery_latency_hours_mean": 22.195121951219512,
+            "contacts_per_episode_mean": 1.503,
+            "avg_episode_length": 1.503,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16208.196859999962,
+            "recovery_rate": 0.965,
+            "recovery_latency_hours_mean": 25.069430051813473,
+            "contacts_per_episode_mean": 1.609,
+            "avg_episode_length": 1.609,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16160.160119999966,
+            "recovery_rate": 0.978,
+            "recovery_latency_hours_mean": 26.208588957055216,
+            "contacts_per_episode_mean": 1.6,
+            "avg_episode_length": 1.6,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16498.180969999954,
+            "recovery_rate": 0.964,
+            "recovery_latency_hours_mean": 22.456431535269708,
+            "contacts_per_episode_mean": 1.559,
+            "avg_episode_length": 1.559,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16422.079839999966,
+            "recovery_rate": 0.983,
+            "recovery_latency_hours_mean": 18.750762970498474,
+            "contacts_per_episode_mean": 1.435,
+            "avg_episode_length": 1.435,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16607.133179999957,
+            "recovery_rate": 0.984,
+            "recovery_latency_hours_mean": 17.951219512195124,
+            "contacts_per_episode_mean": 1.416,
+            "avg_episode_length": 1.416,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16148.919369999963,
+            "recovery_rate": 0.978,
+            "recovery_latency_hours_mean": 25.66871165644172,
+            "contacts_per_episode_mean": 1.589,
+            "avg_episode_length": 1.589,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16454.02915999996,
+            "recovery_rate": 0.963,
+            "recovery_latency_hours_mean": 25.42056074766355,
+            "contacts_per_episode_mean": 1.621,
+            "avg_episode_length": 1.621,
+            "safety_violations": 0
+          }
+        ]
+      },
+      "Rule-Based": {
+        "episode_return": {
+          "min": 16117.292509999983,
+          "max": 16724.66702999998,
+          "mean": 16445.421214499976,
+          "std": 157.27241859258217
+        },
+        "recovery_rate": {
+          "min": 0.959,
+          "max": 0.993,
+          "mean": 0.9776,
+          "std": 0.01034117981663602
+        },
+        "recovery_latency_hours": {
+          "min": 11.10253807106599,
+          "max": 18.376930998970135,
+          "mean": 14.975326792732108,
+          "std": 2.3389233090481083
+        },
+        "contacts_per_episode": {
+          "min": 1.192,
+          "max": 1.461,
+          "mean": 1.3437,
+          "std": 0.08557400306167758
+        },
+        "safety_violations_total": 0,
+        "per_config_results": [
+          {
+            "episode_return_mean": 16339.186899999975,
+            "recovery_rate": 0.979,
+            "recovery_latency_hours_mean": 16.377936670071502,
+            "contacts_per_episode_mean": 1.366,
+            "avg_episode_length": 1.865,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16320.611149999977,
+            "recovery_rate": 0.978,
+            "recovery_latency_hours_mean": 12.646216768916155,
+            "contacts_per_episode_mean": 1.257,
+            "avg_episode_length": 1.674,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16117.292509999983,
+            "recovery_rate": 0.963,
+            "recovery_latency_hours_mean": 17.52128764278297,
+            "contacts_per_episode_mean": 1.41,
+            "avg_episode_length": 1.927,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16488.83853999997,
+            "recovery_rate": 0.986,
+            "recovery_latency_hours_mean": 12.012170385395537,
+            "contacts_per_episode_mean": 1.234,
+            "avg_episode_length": 1.7,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16432.811759999975,
+            "recovery_rate": 0.983,
+            "recovery_latency_hours_mean": 15.570701932858595,
+            "contacts_per_episode_mean": 1.364,
+            "avg_episode_length": 1.771,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16250.21392999998,
+            "recovery_rate": 0.985,
+            "recovery_latency_hours_mean": 17.660913705583756,
+            "contacts_per_episode_mean": 1.458,
+            "avg_episode_length": 1.874,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16462.21621999997,
+            "recovery_rate": 0.985,
+            "recovery_latency_hours_mean": 12.073096446700507,
+            "contacts_per_episode_mean": 1.251,
+            "avg_episode_length": 1.696,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16606.773979999973,
+            "recovery_rate": 0.992,
+            "recovery_latency_hours_mean": 11.87399193548387,
+            "contacts_per_episode_mean": 1.257,
+            "avg_episode_length": 1.682,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16493.546899999976,
+            "recovery_rate": 0.979,
+            "recovery_latency_hours_mean": 15.970377936670072,
+            "contacts_per_episode_mean": 1.389,
+            "avg_episode_length": 1.808,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16437.700249999973,
+            "recovery_rate": 0.967,
+            "recovery_latency_hours_mean": 17.4229576008273,
+            "contacts_per_episode_mean": 1.461,
+            "avg_episode_length": 1.872,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16383.701869999973,
+            "recovery_rate": 0.959,
+            "recovery_latency_hours_mean": 17.476538060479665,
+            "contacts_per_episode_mean": 1.438,
+            "avg_episode_length": 1.979,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16724.66702999998,
+            "recovery_rate": 0.993,
+            "recovery_latency_hours_mean": 14.474320241691842,
+            "contacts_per_episode_mean": 1.34,
+            "avg_episode_length": 1.764,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16562.17841999997,
+            "recovery_rate": 0.986,
+            "recovery_latency_hours_mean": 12.32657200811359,
+            "contacts_per_episode_mean": 1.217,
+            "avg_episode_length": 1.757,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16399.88991999997,
+            "recovery_rate": 0.961,
+            "recovery_latency_hours_mean": 15.505723204994798,
+            "contacts_per_episode_mean": 1.342,
+            "avg_episode_length": 1.873,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16260.542879999979,
+            "recovery_rate": 0.98,
+            "recovery_latency_hours_mean": 17.301020408163264,
+            "contacts_per_episode_mean": 1.424,
+            "avg_episode_length": 1.937,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16663.215439999967,
+            "recovery_rate": 0.97,
+            "recovery_latency_hours_mean": 13.294845360824743,
+            "contacts_per_episode_mean": 1.289,
+            "avg_episode_length": 1.746,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16565.012949999975,
+            "recovery_rate": 0.985,
+            "recovery_latency_hours_mean": 11.10253807106599,
+            "contacts_per_episode_mean": 1.192,
+            "avg_episode_length": 1.668,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16664.91996999997,
+            "recovery_rate": 0.987,
+            "recovery_latency_hours_mean": 13.616008105369808,
+            "contacts_per_episode_mean": 1.311,
+            "avg_episode_length": 1.713,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16230.435499999967,
+            "recovery_rate": 0.971,
+            "recovery_latency_hours_mean": 18.376930998970135,
+            "contacts_per_episode_mean": 1.456,
+            "avg_episode_length": 1.897,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 16504.66816999997,
+            "recovery_rate": 0.963,
+            "recovery_latency_hours_mean": 16.90238836967809,
+            "contacts_per_episode_mean": 1.418,
+            "avg_episode_length": 1.913,
+            "safety_violations": 0
+          }
+        ]
+      },
+      "Fixed Retry": {
+        "episode_return": {
+          "min": 792.234,
+          "max": 1238.671,
+          "mean": 1006.0347500000001,
+          "std": 109.6530625527053
+        },
+        "recovery_rate": {
+          "min": 0.097,
+          "max": 0.144,
+          "mean": 0.11699999999999999,
+          "std": 0.011895377253370318
+        },
+        "recovery_latency_hours": {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "contacts_per_episode": {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "safety_violations_total": 0,
+        "per_config_results": [
+          {
+            "episode_return_mean": 1044.698,
+            "recovery_rate": 0.117,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.72,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1046.698,
+            "recovery_rate": 0.117,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.72,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1238.671,
+            "recovery_rate": 0.144,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.693,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1043.697,
+            "recovery_rate": 0.118,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.719,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 953.702,
+            "recovery_rate": 0.113,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.724,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 858.213,
+            "recovery_rate": 0.102,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.735,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1067.69,
+            "recovery_rate": 0.13,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.706,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 972.215,
+            "recovery_rate": 0.105,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.731,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 974.204,
+            "recovery_rate": 0.121,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.714,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 905.725,
+            "recovery_rate": 0.105,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.729,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1124.207,
+            "recovery_rate": 0.128,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.705,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1025.21,
+            "recovery_rate": 0.125,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.708,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1129.709,
+            "recovery_rate": 0.126,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.707,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 878.731,
+            "recovery_rate": 0.104,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.729,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 990.723,
+            "recovery_rate": 0.112,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.721,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 792.234,
+            "recovery_rate": 0.101,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.732,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1141.703,
+            "recovery_rate": 0.132,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.701,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 986.715,
+            "recovery_rate": 0.12,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.713,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 853.738,
+            "recovery_rate": 0.097,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.736,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 1092.212,
+            "recovery_rate": 0.123,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.71,
+            "safety_violations": 0
+          }
+        ]
+      },
+      "No Recovery": {
+        "episode_return": {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recovery_rate": {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recovery_latency_hours": {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "contacts_per_episode": {
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "safety_violations_total": 0,
+        "per_config_results": [
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          },
+          {
+            "episode_return_mean": 0.0,
+            "recovery_rate": 0.0,
+            "recovery_latency_hours_mean": 0.0,
+            "contacts_per_episode_mean": 0.0,
+            "avg_episode_length": 1.0,
+            "safety_violations": 0
+          }
+        ]
+      }
+    }
+  }
+}

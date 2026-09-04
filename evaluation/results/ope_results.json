@@ -1,0 +1,19 @@
+{
+  "provenance": "HELD_OUT_OFFLINE_EVAL",
+  "importance_sampling": {
+    "estimator": "importance_sampling",
+    "provenance": "HELD_OUT_OFFLINE_EVAL",
+    "estimated_return_mean": 3863.2766130830864,
+    "estimated_return_95ci_lo": 3659.7349654965615,
+    "estimated_return_95ci_hi": 4062.9570166789154,
+    "n_episodes": 15000
+  },
+  "doubly_robust": {
+    "estimator": "doubly_robust",
+    "provenance": "HELD_OUT_OFFLINE_EVAL",
+    "estimated_return_mean": 16392.00719429134,
+    "estimated_return_95ci_lo": 16153.301902145104,
+    "estimated_return_95ci_hi": 16629.670170196725,
+    "n_episodes": 15000
+  }
+}
