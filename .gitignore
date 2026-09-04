@@ -1,0 +1,104 @@
+# ==========================================
+# API Keys, Secrets & Private Credentials
+# ==========================================
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.crt
+*.cer
+*.pfx
+*.p12
+*.secret
+*api_key*
+*apikey*
+credentials.json
+client_secret*.json
+service_account*.json
+service-account*.json
+token.json
+tokens.json
+secrets/
+private/
+*razorpay*key*
+*razorpay*.secret
+*.credentials
+
+# ==========================================
+# Operating System & IDE Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Python & Environment
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ==========================================
+# Database & Runtime State
+# ==========================================
+*.db
+*.db-*
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+data/recovery.db*
+*.log
+logs/
+
+# ==========================================
+# Frontend & Node
+# ==========================================
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+/package-lock.json
+
+# ==========================================
+# Machine Learning Data & Evaluation Artifacts
+# ==========================================
+data/models/
+data/synthetic/*.parquet
+evaluation/results/
